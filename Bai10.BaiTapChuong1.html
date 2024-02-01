@@ -1,0 +1,66 @@
+<!-- BÀI TẬP CHƯƠNG 1 
+# Tạo 1 file HTML như đã học và làm tât cả các bài dưới đây vào.-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <!--1.Liệt kê 10  thẻ inline, 10 thẻ block và các thẻ semantic HTML5 mà bạn biết 
+2. Làm 1 ví dụ về Bem cho Block có tên là "boy"
+3. Hày làm 1 ví dụ về sự kết hợp giữa thẻ block và thẻ inline
+4. Áp dụng kiến thức về BEM đặt tên cho UI này: static.collectui.com/shots/1436570/dropdown-menu-large Hint: Block có tên `dropdown`-->
+
+        <!-- BÀI GIẢI -->
+        <!-- Bài 1: Nếu quên hãy vào wep Reference.io để xem lại
+- 10 thẻ inline: thẻ image, thẻ a, thẻ button, thẻ em, thẻ trong, thẻ i, thẻ b, thẻ span, thẻ sub, thẻ sup
+- 10 thể block: thẻ p, thẻ div, thẻ h1, thẻ h2 , thẻ h3, thẻ h4 , thẻ h5, thẻ h6, thẻ section,  thẻ article
+- Các thẻ semantic HTML5: thẻ Header, thẻ footer, thẻ aside, thẻ nav, thẻ section, thẻ article, thẻ iframe, thẻ span-->
+        <!-- Bài 2:  
+Block : boy
+element: boy__cute, boy__cool, boy__hiphop
+modifier: boy__cute--big, by__cool--small, boy__hiphop--smart-->
+        <h1 class="boy">Hiiiii</h1>
+        <h1 class="boy__cool"></h1>
+        <h1 class="boy__cute boy__cute--big">Hahahaha</h1>
+
+        <!-- Bài 3:  -->
+        <p>If you want more information <a href="#">click here</a></p>
+
+        <!-- Bài 4:
+Block: dropdown
+element: dropdown__selected (Khi nhấn vào call to action thì nó sẽ mở ra các phần để chọn gồm new project, view profide, settings, logout thì phần để chọn như vậy gọi là selected )
+modifier: dropdown__call-to-action--primary, dropdown__new-project--primary, dropdown__view-project--primary, dropdown__setting--primary, dropdown__logout--primary -->
+
+        <div class="dropdown">
+            <div class="dopdow__select">
+                <!--dropdown__selected là call to action -->
+                <span class="dropdown__selected">Call to action</span
+                ><!--Còn cái icon bấm dô hiện ra các phần để chọn thì vào wep fontawesome cdn 5.14 là để lấy link icon sau khi lấy link icon thì fontawesome sẽ sử dụng thẻ i để hiện icon với cú pháp i.fa.fa-caret -down tức là thẻ i với tên class của thẻ i là fa fa-caret-down -->
+
+                <!-- dropdown__caret là cái icon tam giác nhỏ có đỉnh quay xuống tức là cái icon khi bấm dô sẽ ra các phần để chọn của call to action -->
+                <i class="fa fa-caret-down dropdown__caret"></i
+                ><!--Sau khi gõ cú pháp vs thẻ i để hiện icon thì nó sẽ ra 1 các selected tức là 1 cái tam giác nhỏ đỉnh quay xuống để khi nhấn vào tam giác nhỏ của call to action này nó sẽ hiện ra các phần để chọn như đã nói ở trên-là gồm new project, view profide, settings, logout mà các phần để chọn là các phần tử của call to action nằm trong 1 cái khối vuông và có 1 dấu mũ thì khối vuông có dấu mũ này là element của cái call to action nên đặt tên cho element for dropdown dấu mũ tiếng anh là caret -->
+            </div>
+            <div class="dropdown__list">
+                <!--Là gồm các new project, view profide, settings, logout-->
+                <div class="dropdown__item">
+                    <!--là cả khối gồm mõi phần và cả icon của phần đó luôn như hình minh họa trên wep static.collectui.com/shots/1436570/dropdown-menu-large Hint thì khối new project và icon của new project là dấu + thì khối này là item tương tự mõi phần lựa chọn view profide, settings, logout và icon của mõi phần lựa chọn  là 1 item -->
+                    <span class="dropdown__title"></span
+                    ><!--Là các chữ tiêu đề tức các chữ view profide, settings, logout-->
+                    <i class="fa fa-plus dropdown__icon"></i
+                    ><!--là các icon của các dropdown__list tức là các icon của new project, view profide, settings, logout -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

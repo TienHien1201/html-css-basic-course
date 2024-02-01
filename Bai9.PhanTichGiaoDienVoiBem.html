@@ -1,0 +1,19 @@
+<!-- EX1: Phân tích  hình Flash Messages by Kayla Sawtelle ở mục 11.flash messages của wep collect UI
+    * Phân tích
+    - Block: Flash messages 
+    - Element : image(hình), title(tiêu đề), description(desc),  Button(nút)
+    - Modifier: vì ảnh có phần tùy biến(Modifier) chỉ có 2 màu là màu xanh và màu đỏ nhưng đặt tên Bem với blue và red thì không hay nên ta đặt primary(Chính hay còn gọi là cái thứ 1 là màu đỏ) , secondary(Phụ hay còn gọi là cái thứ 2 là màu xanh)  
+
+    * Đặt tên:   vì trong hình cho có 2 block flash message lận vì 2 block này tương tự nhau chỉ có khác modifier
+    - Block 1 & 2: 
+    - Block: flash-message
+    - Element for Block: flash-massages__image, flash-message__titile, flash-massages__desc , flash-massages__button 
+    - Modifier for (element của block 1):  flash-messages__titile--primary, flash-message__button--primary
+    Modifier for (element của block 2): flash-message__image--secondary,  flash-message__button--secondary
+-->
+<!-- Áp dụng -->
+<h3 class="flash-message__title flash-messages__titile--primary">Right on</h3>
+<!--Thường thì modifier nó sẽ đi kèm(tức là đứng chung) với element hoặc là block. Nên như dòng này ta thấy modifier của title sẽ nằm chung với element titile của flash-message để sau này ta code cho CSS ta sẽ code cho
+element title của flash-message(tức flash-message__title ) sau đó ta sẽ tùy biến(tùy biến tức là modifier) cái element title của fash-message(tức là flash-message__title) . Tóm lại khi đặt tên class cho modifier thì modifier nó sẽ nằm chung với block hoặc là modifier nó sẽ nằm chung với block -->
+<button class="flash-message__button flash-message__button--secondary"></button
+><!--Tương tự như trên-->
