@@ -1,3 +1,4 @@
 .prettierrc
 setting.json
 HTML-CSS.code-workspace
+.vscode/**
